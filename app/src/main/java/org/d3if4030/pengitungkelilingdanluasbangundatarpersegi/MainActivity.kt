@@ -9,38 +9,25 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import org.d3if4030.pengitungkelilingdanluasbangundatarpersegi.databinding.ActivityMainBinding
+import androidx.navigation.NavController
+import androidx.navigation.findNavController
+import androidx.navigation.ui.NavigationUI
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
-
-    fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View?  {
-        binding = ActivityMainBinding.inflate(layoutInflater,container,false)
-        binding.button.setOnClickListener{
-            hitung()
-        }
-        return binding.root
-    }
+    private lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        this.setTitle(R.string.app_name)
+
+        navController = findNavController(R.id.myNavHostFragment)
+        NavigationUI.setupActionBarWithNavController(this,navController)
     }
 
-    private fun hitung (){
-        val sisi = binding.sisi.text.toString()
-        if (TextUtils.isEmpty(sisi)){
-            Toast.makeText(this, "Sisi Harus Diisi", Toast.LENGTH_LONG).show()
-            return
-        }
-        val hasilKeliling = sisi.toDouble()*4
-        val hasilLuas = sisi.toDouble()*sisi.toDouble()
-        binding.textKeliling.visibility = View.VISIBLE
-        binding.keliling.text = hasilKeliling.toString()
-        binding.textLuas.visibility = View.VISIBLE
-        binding.luas.text = hasilLuas.toString()
-
+    override fun onSupportNavigateUp(): Boolean {
+        return navController.navigateUp()
     }
 
 }
