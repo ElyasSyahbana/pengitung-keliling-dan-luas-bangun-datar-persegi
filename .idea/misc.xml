@@ -4,7 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/folder kuliah/PengitungKelilingdanLuasBangunDatarPersegi/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/folder kuliah/PengitungKelilingdanLuasBangunDatarPersegi/app/src/main/res/layout/fragment_utama.xml" value="0.25" />
+        <entry key="..\:/folder kuliah/PengitungKelilingdanLuasBangunDatarPersegi/app/src/main/res/layout/fragment_histori.xml" value="0.12708333333333333" />
+        <entry key="..\:/folder kuliah/PengitungKelilingdanLuasBangunDatarPersegi/app/src/main/res/layout/fragment_utama.xml" value="0.4" />
+        <entry key="..\:/folder kuliah/PengitungKelilingdanLuasBangunDatarPersegi/app/src/main/res/layout/item_histori.xml" value="0.536" />
+        <entry key="..\:/folder kuliah/PengitungKelilingdanLuasBangunDatarPersegi/app/src/main/res/menu/histori_menu.xml" value="0.25" />
+        <entry key="..\:/folder kuliah/PengitungKelilingdanLuasBangunDatarPersegi/app/src/main/res/menu/options_menu.xml" value="0.264" />
       </map>
     </option>
   </component>

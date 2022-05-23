@@ -11,5 +11,14 @@
         android:label="FragmentUtama"
         tools:layout="@layout/fragment_utama"
 
-        />
+        >
+        <action
+            android:id="@+id/action_fragmentUtama_to_historiFragment"
+            app:destination="@id/historiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historiFragment"
+        android:name="org.d3if4030.pengitungkelilingdanluasbangundatarpersegi.histori.HistoriFragment"
+        android:label="HistoriFragment"
+        tools:layout="@layout/fragment_histori"/>
 </navigation>
