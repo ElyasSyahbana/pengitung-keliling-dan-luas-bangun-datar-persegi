@@ -54,6 +54,10 @@ class FragmentUtama : Fragment() {
             findNavController().navigate(R.id.action_fragmentUtama_to_historiFragment)
         }
 
+        binding.buttonListBangunDatar.setOnClickListener{
+            findNavController().navigate(R.id.action_fragmentUtama_to_listBangunDatarFragment)
+        }
+
         binding.buttonShare.setOnClickListener{
             bagikan()
         }

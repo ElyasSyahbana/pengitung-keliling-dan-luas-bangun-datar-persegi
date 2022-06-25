@@ -15,10 +15,17 @@
         <action
             android:id="@+id/action_fragmentUtama_to_historiFragment"
             app:destination="@id/historiFragment" />
+        <action
+            android:id="@+id/action_fragmentUtama_to_listBangunDatarFragment"
+            app:destination="@id/listBangunDatarFragment" />
     </fragment>
     <fragment
         android:id="@+id/historiFragment"
         android:name="org.d3if4030.pengitungkelilingdanluasbangundatarpersegi.histori.HistoriFragment"
         android:label="HistoriFragment"
         tools:layout="@layout/fragment_histori"/>
+    <fragment
+        android:id="@+id/listBangunDatarFragment"
+        android:name="org.d3if4030.pengitungkelilingdanluasbangundatarpersegi.ListBangunDatarFragment"
+        android:label="ListBangunDatarFragment" />
 </navigation>

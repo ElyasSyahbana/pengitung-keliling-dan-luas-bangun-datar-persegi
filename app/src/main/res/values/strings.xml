@@ -10,4 +10,6 @@
     <string name="hapus">Hapus</string>
     <string name="batal">Batal</string>
     <string name="hapus_histori">Hapus Histori</string>
+    <string name="koneksi_error">Koneksi Error!</string>
+    <string name="rumus_luas">Luas: %1$s</string>
 </resources>
